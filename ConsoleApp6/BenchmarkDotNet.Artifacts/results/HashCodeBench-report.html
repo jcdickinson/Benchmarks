@@ -15,7 +15,7 @@
 <pre><code>
 BenchmarkDotNet=v0.10.9, OS=Windows 10 Redstone 2 (10.0.15063)
 Processor=Intel Core i7-4800MQ CPU 2.70GHz (Haswell), ProcessorCount=8
-Frequency=2630627 Hz, Resolution=380.1375 ns, Timer=TSC
+Frequency=2630632 Hz, Resolution=380.1368 ns, Timer=TSC
 .NET Core SDK=2.0.2
   [Host]     : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT
   DefaultJob : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT
@@ -25,11 +25,15 @@ Frequency=2630627 Hz, Resolution=380.1375 ns, Timer=TSC
 <table>
 <thead><tr><th>           Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Scaled</th>
 </tr>
-</thead><tbody><tr><td>           Unsafe</td><td>79.98 ns</td><td>1.4723 ns</td><td>1.3772 ns</td><td>1.00</td>
-</tr><tr><td>'Calls, No Inlining'</td><td>40.34 ns</td><td>0.1778 ns</td><td>0.1576 ns</td><td>0.50</td>
-</tr><tr><td>'Unrolled, No Inlining'</td><td>12.19 ns</td><td>0.0433 ns</td><td>0.0384 ns</td><td>0.15</td>
-</tr><tr><td>'Calls, Inlining'</td><td>34.55 ns</td><td>0.1372 ns</td><td>0.1216 ns</td><td>0.43</td>
-</tr><tr><td>'Unrolled, Inlining'</td><td>12.22 ns</td><td>0.0885 ns</td><td>0.0785 ns</td><td>0.15</td>
+</thead><tbody><tr><td>           Unsafe</td><td>55.91 ns</td><td>0.5293 ns</td><td>0.4692 ns</td><td>1.00</td>
+</tr><tr><td>'Calls, No Inlining'</td><td>39.37 ns</td><td>0.0902 ns</td><td>0.0844 ns</td><td>0.70</td>
+</tr><tr><td>'Unrolled, No Inlining'</td><td>11.93 ns</td><td>0.1219 ns</td><td>0.1081 ns</td><td>0.21</td>
+</tr><tr><td>'Calls, Inlining'</td><td>30.42 ns</td><td>0.0928 ns</td><td>0.0823 ns</td><td>0.54</td>
+</tr><tr><td>'Unrolled, Inlining'</td><td>11.93 ns</td><td>0.1003 ns</td><td>0.0838 ns</td><td>0.21</td>
+</tr><tr><td>    'Seed Read 1'</td><td>12.12 ns</td><td>0.1618 ns</td><td>0.1514 ns</td><td>0.22</td>
+</tr><tr><td>    'Seed Read 4'</td><td>12.01 ns</td><td>0.1978 ns</td><td>0.1850 ns</td><td>0.21</td>
+</tr><tr><td>      'Seed Lazy'</td><td>11.91 ns</td><td>0.0165 ns</td><td>0.0154 ns</td><td>0.21</td>
+</tr><tr><td>'Seed Thread Lazy'</td><td>13.85 ns</td><td>0.0334 ns</td><td>0.0261 ns</td><td>0.25</td>
 </tr></tbody></table>
 </body>
 </html>

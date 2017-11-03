@@ -2,7 +2,7 @@
 
 BenchmarkDotNet=v0.10.9, OS=Windows 10 Redstone 2 (10.0.15063)
 Processor=Intel Core i7-4800MQ CPU 2.70GHz (Haswell), ProcessorCount=8
-Frequency=2630627 Hz, Resolution=380.1375 ns, Timer=TSC
+Frequency=2630632 Hz, Resolution=380.1368 ns, Timer=TSC
 .NET Core SDK=2.0.2
   [Host]     : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT
   DefaultJob : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT
@@ -11,8 +11,12 @@ Frequency=2630627 Hz, Resolution=380.1375 ns, Timer=TSC
 ```
  |                  Method |     Mean |     Error |    StdDev | Scaled |
  |------------------------ |---------:|----------:|----------:|-------:|
- |                  Unsafe | 79.98 ns | 1.4723 ns | 1.3772 ns |   1.00 |
- |    'Calls, No Inlining' | 40.34 ns | 0.1778 ns | 0.1576 ns |   0.50 |
- | 'Unrolled, No Inlining' | 12.19 ns | 0.0433 ns | 0.0384 ns |   0.15 |
- |       'Calls, Inlining' | 34.55 ns | 0.1372 ns | 0.1216 ns |   0.43 |
- |    'Unrolled, Inlining' | 12.22 ns | 0.0885 ns | 0.0785 ns |   0.15 |
+ |                  Unsafe | 55.91 ns | 0.5293 ns | 0.4692 ns |   1.00 |
+ |    'Calls, No Inlining' | 39.37 ns | 0.0902 ns | 0.0844 ns |   0.70 |
+ | 'Unrolled, No Inlining' | 11.93 ns | 0.1219 ns | 0.1081 ns |   0.21 |
+ |       'Calls, Inlining' | 30.42 ns | 0.0928 ns | 0.0823 ns |   0.54 |
+ |    'Unrolled, Inlining' | 11.93 ns | 0.1003 ns | 0.0838 ns |   0.21 |
+ |           'Seed Read 1' | 12.12 ns | 0.1618 ns | 0.1514 ns |   0.22 |
+ |           'Seed Read 4' | 12.01 ns | 0.1978 ns | 0.1850 ns |   0.21 |
+ |             'Seed Lazy' | 11.91 ns | 0.0165 ns | 0.0154 ns |   0.21 |
+ |      'Seed Thread Lazy' | 13.85 ns | 0.0334 ns | 0.0261 ns |   0.25 |

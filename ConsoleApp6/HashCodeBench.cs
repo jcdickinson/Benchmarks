@@ -76,5 +76,61 @@ namespace ConsoleApp6
                 GetCounter(),
                 GetCounter());
         }
+
+        [Benchmark(Baseline = false, Description = "Seed Read 1")]
+        public void SeedRead1()
+        {
+            ConsoleApp6.SeedRead1.HashCode.Combine(
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter());
+        }
+
+        [Benchmark(Baseline = false, Description = "Seed Read 4")]
+        public void SeedRead4()
+        {
+            ConsoleApp6.SeedRead4.HashCode.Combine(
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter());
+        }
+
+        [Benchmark(Baseline = false, Description = "Seed Lazy")]
+        public void SeedLazy()
+        {
+            ConsoleApp6.SeedLazy.HashCode.Combine(
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter());
+        }
+
+        [Benchmark(Baseline = false, Description = "Seed Thread Lazy")]
+        public void SeedThreadLazy()
+        {
+            ConsoleApp6.SeedThreadLazy.HashCode.Combine(
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter(),
+                GetCounter());
+        }
     }
 }
