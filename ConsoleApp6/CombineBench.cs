@@ -202,5 +202,19 @@ namespace ConsoleApp6
             hc.Add(_counter);
             _counter = hc.ToHashCode();
         }
+
+        [Benchmark(Description = "ToHashCode: Inlined")]
+        public void ToHashCode_Inlined()
+        {
+            var hc = new InlinedUnrolled.HashCode();
+            _counter = hc.ToHashCode();
+        }
+
+        [Benchmark(Description = "ToHashCode: Non-Inlined")]
+        public void ToHashCode_NonInlined()
+        {
+            var hc = new CombineNonInlinedUnrolled.HashCode();
+            _counter = hc.ToHashCode();
+        }
     }
 }

@@ -11,21 +11,23 @@ Frequency=2630632 Hz, Resolution=380.1368 ns, Timer=TSC
 ```
  |                        Method |      Mean |     Error |    StdDev |
  |------------------------------ |----------:|----------:|----------:|
- |                  '8: Inlined' | 20.048 ns | 0.2160 ns | 0.2020 ns |
- |              '8: Non-Inlined' | 21.022 ns | 0.0514 ns | 0.0481 ns |
- |                  '7: Inlined' | 17.509 ns | 0.0710 ns | 0.0664 ns |
- |              '7: Non-Inlined' | 17.721 ns | 0.0430 ns | 0.0359 ns |
- |                  '6: Inlined' | 15.994 ns | 0.0405 ns | 0.0359 ns |
- |              '6: Non-Inlined' | 15.892 ns | 0.0726 ns | 0.0679 ns |
- |                  '5: Inlined' | 14.242 ns | 0.0475 ns | 0.0421 ns |
- |              '5: Non-Inlined' | 13.910 ns | 0.0765 ns | 0.0716 ns |
- |                  '4: Inlined' | 12.244 ns | 0.0269 ns | 0.0239 ns |
- |              '4: Non-Inlined' | 12.416 ns | 0.0228 ns | 0.0213 ns |
- |                  '3: Inlined' |  9.565 ns | 0.0577 ns | 0.0540 ns |
- |              '3: Non-Inlined' |  9.345 ns | 0.0476 ns | 0.0422 ns |
- |                  '2: Inlined' |  7.617 ns | 0.0270 ns | 0.0253 ns |
- |              '2: Non-Inlined' |  7.411 ns | 0.0242 ns | 0.0227 ns |
- |                  '1: Inlined' |  5.653 ns | 0.0246 ns | 0.0230 ns |
- |              '1: Non-Inlined' |  5.607 ns | 0.0115 ns | 0.0108 ns |
- |     'Add+ToHashCode: Inlined' | 30.009 ns | 0.0945 ns | 0.0884 ns |
- | 'Add+ToHashCode: Non-Inlined' | 37.874 ns | 0.1375 ns | 0.1219 ns |
+ |                  '8: Inlined' | 19.839 ns | 0.0479 ns | 0.0448 ns |
+ |              '8: Non-Inlined' | 20.943 ns | 0.0436 ns | 0.0387 ns |
+ |                  '7: Inlined' | 17.692 ns | 0.0428 ns | 0.0401 ns |
+ |              '7: Non-Inlined' | 17.915 ns | 0.0650 ns | 0.0576 ns |
+ |                  '6: Inlined' | 15.888 ns | 0.0779 ns | 0.0690 ns |
+ |              '6: Non-Inlined' | 15.759 ns | 0.0501 ns | 0.0418 ns |
+ |                  '5: Inlined' | 14.412 ns | 0.0553 ns | 0.0517 ns |
+ |              '5: Non-Inlined' | 14.040 ns | 0.0755 ns | 0.0706 ns |
+ |                  '4: Inlined' | 12.126 ns | 0.0358 ns | 0.0335 ns |
+ |              '4: Non-Inlined' | 12.243 ns | 0.0653 ns | 0.0610 ns |
+ |                  '3: Inlined' |  9.739 ns | 0.0314 ns | 0.0294 ns |
+ |              '3: Non-Inlined' |  9.489 ns | 0.0100 ns | 0.0084 ns |
+ |                  '2: Inlined' |  7.729 ns | 0.0225 ns | 0.0210 ns |
+ |              '2: Non-Inlined' |  7.567 ns | 0.0185 ns | 0.0174 ns |
+ |                  '1: Inlined' |  5.540 ns | 0.0149 ns | 0.0132 ns |
+ |              '1: Non-Inlined' |  5.712 ns | 0.0197 ns | 0.0184 ns |
+ |     'Add+ToHashCode: Inlined' | 30.280 ns | 0.1552 ns | 0.1452 ns |
+ | 'Add+ToHashCode: Non-Inlined' | 38.465 ns | 0.1351 ns | 0.1198 ns |
+ |         'ToHashCode: Inlined' | 10.160 ns | 0.0360 ns | 0.0337 ns |
+ |     'ToHashCode: Non-Inlined' | 10.144 ns | 0.0194 ns | 0.0172 ns |
