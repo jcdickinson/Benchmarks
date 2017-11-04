@@ -175,7 +175,7 @@ namespace ConsoleApp6
                 GetCounter());
         }
 
-        [Benchmark(Description = "Add+ToHashCode: Inlined")]
+        [Benchmark(Description = "Add+ToHashCode: Inlined", OperationsPerInvoke = 8)]
         public void Add_Inlined()
         {
             var hc = new InlinedUnrolled.HashCode();
@@ -189,7 +189,7 @@ namespace ConsoleApp6
             _counter = hc.ToHashCode();
         }
 
-        [Benchmark(Description = "Add+ToHashCode: Non-Inlined")]
+        [Benchmark(Description = "Add+ToHashCode: Non-Inlined", OperationsPerInvoke = 8)]
         public void Add_NonInlined()
         {
             var hc = new CombineNonInlinedUnrolled.HashCode();
