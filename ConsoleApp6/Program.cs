@@ -1,4 +1,5 @@
-﻿using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Running;
 using ConsoleApp6.InlinedCalls;
 using System;
 
@@ -9,7 +10,9 @@ namespace ConsoleApp6
         static void Main(string[] args)
         {
             //var summary1 = BenchmarkRunner.Run<BenchSafeVsUnsafe>();
-            var summary2 = BenchmarkRunner.Run<HashCodeBench>();
+            //var summary2 = BenchmarkRunner.Run<HashCodeBench>();
+
+            var summary2 = BenchmarkRunner.Run<CombineBench>();
         }
     }
 }
